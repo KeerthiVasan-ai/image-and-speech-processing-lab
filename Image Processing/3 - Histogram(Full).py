@@ -43,10 +43,10 @@ plt.tight_layout()
 plt.show()
 
 
-img = cv.imread("..\dataset\imgs\obutterfly.jpg",0)
+img = cv.imread("..\\dataset\\imgs\\obutterfly.jpg",0)
 equ = cv.equalizeHist(img)
 res = np.hstack((img,equ))
-cv.imwrite("result.png",res)
-img = cv.imread("result.png",0)
+cv.imwrite(os.path.join("..\output","result2.png"),res)
+img = cv.imread("..\\output\\result2.png")
 plt.imshow(img)
 plt.show()
