@@ -1,8 +1,9 @@
 import numpy as np
 import cv2 as cv
 from matplotlib import pyplot as plt
+import os
 
-img = cv.imread(".\dataset\imgs\obutterfly.jpg",0)
+img = cv.imread("..\dataset\imgs\obutterfly.jpg",0)
 plt.subplot(2,2,1)
 plt.title("Original Image")
 plt.imshow(img)
@@ -42,10 +43,10 @@ plt.tight_layout()
 plt.show()
 
 
-img = cv.imread(".\dataset\imgs\obutterfly.jpg",0)
+img = cv.imread("..\dataset\imgs\obutterfly.jpg",0)
 equ = cv.equalizeHist(img)
 res = np.hstack((img,equ))
-cv.imwrite("res.png",res)
-img = cv.imread("res.png",0)
+cv.imwrite("result.png",res)
+img = cv.imread("result.png",0)
 plt.imshow(img)
 plt.show()
