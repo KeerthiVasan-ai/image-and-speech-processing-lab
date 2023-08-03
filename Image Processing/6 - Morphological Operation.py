@@ -7,7 +7,7 @@ img = cv2.imread("..\dataset\imgs\letter1.png")
 
 #Kernal 5x5 Matrix 
 
-kernal = np.ones((5,5),np.uint8)
+kernal = np.ones((3,3),np.uint8)
 
 erosion = cv2.erode(img,kernel=kernal,iterations=1)
 dilation = cv2.dilate(img,kernel=kernal,iterations=1)
