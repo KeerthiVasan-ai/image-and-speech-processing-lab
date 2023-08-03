@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 from matplotlib import pyplot as plt
 
-img = cv2.imread('.\dataset\imgs\lady2.jpg',1)
+img = cv2.imread('..\dataset\imgs\lady2.jpg',1)
 filter = np.array([[-1,-1,-1],[-1,9,-1],[-1,-1,-1]])
 sharpen_img = cv2.filter2D(img,-1,filter)
 plt.subplot(121)

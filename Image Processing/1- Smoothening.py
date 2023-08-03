@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 from matplotlib import pyplot as plt
 
-img = cv2.imread(".\dataset\imgs\lady.jpg")
+img = cv2.imread("..\dataset\imgs\lady.jpg")
 blur = cv2.blur(img,(5,5))
 plt.subplot(121)
 plt.imshow(img)
